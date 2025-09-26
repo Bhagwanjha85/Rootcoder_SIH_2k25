@@ -5,7 +5,6 @@ from PIL import Image
 import threading
 import tempfile
 import numpy as np
-import sounddevice as sd
 from scipy.io.wavfile import write
 import google.generativeai as genai
 
