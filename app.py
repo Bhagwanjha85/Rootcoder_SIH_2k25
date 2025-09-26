@@ -40,6 +40,7 @@ st.markdown("""
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:white;
 }
 
 .stApp {
@@ -228,7 +229,7 @@ h1 {
 }
 
 .stTextInput > div > div > input::placeholder {
-    color: var(--text-secondary);
+    color: black;
     font-style: italic;
 }
 
@@ -262,7 +263,7 @@ LANGUAGES = {
     # ... (Your LANGUAGES dictionary remains the same) ...
     "English": {
         "title": "Root Coder AI - Farmer's Assistant for India",
-        "welcome_message": "Hello! I am Root Coder AI, your expert agricultural assistant for India, a project developed for SIH 2025 by the Root Coder Team (Bhagwan Jha, Mayan Nagar, Aniket Patel, Aman Nagar, Lakshya, and Girija). How can I help you with your farming today? You can ask a question or upload an image.",
+        "welcome_message": "Hello! I am Root Coder AI, your expert agricultural assistant for India Farmers. How can I help you with your farming today? You can ask a question or upload an image.",
         "uploader_label": "Upload an image of your crop, pest, or soil",
         "input_placeholder": "Ask your question here...",
         "language_select": "Choose Language",
@@ -350,13 +351,6 @@ st.markdown('<div class="main-header">', unsafe_allow_html=True)
 st.title(ui_texts["title"])
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Informational Block
-st.info(
-    "**Root Coder AI's Capabilities:**\n\n"
-    "**Disease & Pest Detection:** Upload an image for instant analysis and remedies.\n\n"
-    "**Farming Advice:** Get tips on planting, harvesting, and soil health.\n\n"
-    "**Multilingual Support:** Ask your questions in English, Hindi, Malayalam, or Kannada."
-)
 
 # Initial Message Setup
 if "messages" not in st.session_state:
@@ -542,7 +536,7 @@ footer {visibility: hidden;}
 
 /* 2. Highlight for Project Name and Team */
 .custom-footer strong {
-    color: #ffd700; /* Gold color for highlights */
+    color: #ffd700; 
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
